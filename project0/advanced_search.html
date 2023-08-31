@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <ul class="nav">
+        <li class="google-search"><a href="index.html">Google</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="appbar">Advanced search</p>
+    </div>
+    <div class="line"></div>
+    <div class="div-advanced">
+      <p class="p-advanced">Find pages with...</p>
+    </div>
+
+    <form action="https://www.google.com/search">
+      <div class="row-input">
+        <div class="left-aligned">
+          <p class="p-advanced-words">all these words:</p>
+        </div>
+        <div class="right-aligned">
+          <input type="text" name="as_q" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row-input">
+        <div class="left-aligned">
+          <p class="p-advanced-words">this exact word or phrase:</p>
+        </div>
+        <div class="right-aligned">
+          <input type="text" name="as_epq" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row-input">
+        <div class="left-aligned">
+          <p class="p-advanced-words">any of these words:</p>
+        </div>
+        <div class="right-aligned">
+          <input type="text" name="as_oq" class="form-control" />
+        </div>
+      </div>
+
+      <div class="row-input">
+        <div class="left-aligned">
+          <p class="p-advanced-words">none of these words:</p>
+        </div>
+        <div class="right-aligned">
+          <input type="text" name="as_eq" class="form-control" />
+        </div>
+      </div>
+      <div class="button-advanced">
+        <input
+          type="submit"
+          value="Advanced Search"
+          class="btn button-advanced-submit"
+        />
+      </div>
+    </form>
+  </body>
+</html>
